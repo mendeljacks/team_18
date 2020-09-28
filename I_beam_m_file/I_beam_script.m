@@ -1,6 +1,3 @@
-% NEED TO DO: DERIVE THE MAX VALUE FOR H AND W AND THEIR RESPECTIVE
-% INDEX 
-
 % Script file:
 % JUST RUN THE CODE AND YOU ARE GOOD TO GO
 % ENSURE THAT YOU CHANGE THE INPUTS BASED ON SPECIFICATIONS
@@ -19,7 +16,7 @@ dist  = [1000, 2000, 3000, 4000]; % Distance from force applied
 
 t = 10; % Thickness of I-beam
 h = 1:1:1000-2*t; % Height of I-beam 
-w = 1:1:1000-2*t; % width of I-beam
+w = 1:1:1000-2*t; % width of I-beam 
 
 tol = 1.05; % tolerance for the system (how close we want our desired shear modulus to be to the limit)
 
