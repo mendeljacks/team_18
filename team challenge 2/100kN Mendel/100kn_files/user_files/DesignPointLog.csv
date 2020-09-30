@@ -10,3 +10,7 @@
 # The following header line defines the name of the columns by reference to the parameters.
 Name,P4,P3,P1,P2
 DP 0,100,200,800,200
+# 
+# A non parametric change occurred and invalidated design point results.
+# 09/30/2020 02:15:03
+# 

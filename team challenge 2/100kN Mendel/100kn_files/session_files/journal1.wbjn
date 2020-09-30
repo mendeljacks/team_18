@@ -20,3 +20,43 @@ system2 = template2.CreateSystem()
 responseSurfaceComponent1 = system2.GetComponent(Name="Response Surface")
 responseSurfaceComponent1.Update(AllDependencies=True)
 Save(Overwrite=True)
+responseSurfaceComponent1.Update(AllDependencies=True)
+designPoint1 = Parameters.CreateDesignPoint()
+parameter1 = Parameters.GetParameter(Name="P1")
+designPoint1.SetParameterExpression(
+    Parameter=parameter1,
+    Expression="900")
+designPoint2 = Parameters.CreateDesignPoint()
+designPoint2.SetParameterExpression(
+    Parameter=parameter1,
+    Expression="700")
+designPoint3 = Parameters.CreateDesignPoint()
+parameter2 = Parameters.GetParameter(Name="P2")
+designPoint3.SetParameterExpression(
+    Parameter=parameter2,
+    Expression="100")
+designPoint4 = Parameters.CreateDesignPoint()
+designPoint4.SetParameterExpression(
+    Parameter=parameter2,
+    Expression="300")
+designPoint5 = Parameters.CreateDesignPoint()
+parameter3 = Parameters.GetParameter(Name="P3")
+designPoint5.SetParameterExpression(
+    Parameter=parameter3,
+    Expression="100")
+designPoint6 = Parameters.CreateDesignPoint()
+designPoint6.SetParameterExpression(
+    Parameter=parameter3,
+    Expression="300")
+designPoint7 = Parameters.CreateDesignPoint()
+parameter4 = Parameters.GetParameter(Name="P4")
+designPoint7.SetParameterExpression(
+    Parameter=parameter4,
+    Expression="50")
+designPoint8 = Parameters.CreateDesignPoint()
+designPoint8.SetParameterExpression(
+    Parameter=parameter4,
+    Expression="150")
+responseSurfaceComponent1.Update(AllDependencies=True)
+unitSystem1 = SetProjectUnitSystem(UnitSystemName="NMM_STANDARD")
+Save(Overwrite=True)
