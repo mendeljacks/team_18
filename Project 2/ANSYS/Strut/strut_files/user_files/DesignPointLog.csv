@@ -1,0 +1,12 @@
+﻿# 
+# This file contains the parameter values of the Design Points successfully updated by ANSYS Workbench.
+# Project name: strut
+# Creation date: 09/29/2020 03:55:41
+# 
+# 09/29/2020 03:55:41
+# The parameters defined in the project are:
+# ,P1 - Force Z Component [N],P2 - Total Deformation Load Multiplier
+# 
+# The following header line defines the name of the columns by reference to the parameters.
+Name,P1,P2
+DP 0,-100,73.367469467449766
