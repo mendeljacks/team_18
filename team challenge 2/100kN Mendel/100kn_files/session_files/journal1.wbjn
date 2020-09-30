@@ -1,0 +1,22 @@
+# encoding: utf-8
+# 2020 R1
+SetScriptVersion(Version="20.1.164")
+template1 = GetTemplate(
+    TemplateName="Static Structural",
+    Solver="ANSYS")
+system1 = template1.CreateSystem()
+geometry1 = system1.GetContainer(ComponentName="Geometry")
+geometry1.SetFile(
+    FilePath=GetAbsoluteUserPathName("repos/team_18/team challenge 2/50kN Mendel/Assembly.SLDASM"),
+    PlugInName="SOLIDWORKS[20132]")
+modelComponent1 = system1.GetComponent(Name="Model")
+modelComponent1.Refresh()
+model1 = system1.GetContainer(ComponentName="Model")
+model1.Edit()
+geometry1.Edit()
+geometry1.Edit()
+template2 = GetTemplate(TemplateName="Response Surface")
+system2 = template2.CreateSystem()
+responseSurfaceComponent1 = system2.GetComponent(Name="Response Surface")
+responseSurfaceComponent1.Update(AllDependencies=True)
+Save(Overwrite=True)

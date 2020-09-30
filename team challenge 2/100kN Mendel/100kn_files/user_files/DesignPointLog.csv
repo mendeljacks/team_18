@@ -1,0 +1,12 @@
+﻿# 
+# This file contains the parameter values of the Design Points successfully updated by ANSYS Workbench.
+# Project name: 100kn
+# Creation date: 09/30/2020 02:11:26
+# 
+# 09/30/2020 02:11:26
+# The parameters defined in the project are:
+# ,P4 - A1@ANS_w5,P3 - A1@ANS_w1,P1 - A1@ANS_h1,P2 - A1@ANS_h5
+# 
+# The following header line defines the name of the columns by reference to the parameters.
+Name,P4,P3,P1,P2
+DP 0,100,200,800,200
