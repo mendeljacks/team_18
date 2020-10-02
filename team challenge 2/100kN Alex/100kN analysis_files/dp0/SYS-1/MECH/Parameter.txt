@@ -1,0 +1,33 @@
+$Topology Optimization Input File
+FeederSystem1=Static,Static42,42,C:\Users\alexj\Documents\Monash University\Year 6\Semester 2\MEC4407 - Design 3\team_18\team challenge 2\100kN Alex\100kN analysis_files\dp0\SYS\MECH\,1,1.000000
+nonlin_contact = no
+min_density = 0.001
+power_law_stiff = 3
+max_iter = 500
+acc = 0.001
+output_freq = 1
+max_num_inter_files = 500
+solver = scpip
+ansys_version = 201
+units = MPA
+distributed = True
+num_procs = 2
+
+cut_off_scp = 1
+version_scp = 402
+NORM_MAX_APPROX = true
+INTERNAL_STRESS_APP = false
+NUM_GLOB_STRESS_CLUSTERS = 1
+
+$Objective:
+objective1=TOT_MASS,Objective,no,1
+
+$Constraints:
+constraint1 = GLOB_STRESS, Global Von-Mises Stress Constraint, 100.000000000, all, 1
+
+$Design Space:
+design_elements = OptimizationRegionElements.dat
+
+$Capability Info:
+license_server = 2325@lic-ansysst.eng.monash.edu.au
+capability_id = Eng-app31-v20_AD_MONASH_EDU-SYSTEM-2336-269999
