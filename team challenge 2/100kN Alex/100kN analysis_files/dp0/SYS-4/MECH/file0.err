@@ -1,10 +1,10 @@
-/COM,ANSYS RELEASE 2020 R1           BUILD 20.1      UP20191203       14:18:42
+/COM,ANSYS RELEASE 2020 R1           BUILD 20.1      UP20191203       17:20:32
 
- *** WARNING ***                         CP =       0.594   TIME= 14:18:44
+ *** WARNING ***                         CP =       0.750   TIME= 17:20:34
  Element shape checking is currently inactive.  Issue SHPP,ON or         
  SHPP,WARN to reactivate, if desired.                                    
 
- *** WARNING ***                         CP =       0.688   TIME= 14:18:44
- Material number 11 (used by element 42967) should normally have at      
+ *** WARNING ***                         CP =       0.875   TIME= 17:20:34
+ Material number 11 (used by element 42969) should normally have at      
  least one MP or one TB type command associated with it.  Output of      
  energy by material may not be available.                                
