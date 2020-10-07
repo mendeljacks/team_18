@@ -1,0 +1,10 @@
+/COM,ANSYS RELEASE 2020 R1           BUILD 20.1      UP20191203       00:14:58
+
+ *** WARNING ***                         CP =       0.281   TIME= 00:15:02
+ Element shape checking is currently inactive.  Issue SHPP,ON or         
+ SHPP,WARN to reactivate, if desired.                                    
+
+ *** WARNING ***                         CP =       0.281   TIME= 00:15:02
+ Material number 11 (used by element 8700) should normally have at least 
+ one MP or one TB type command associated with it.  Output of energy by  
+ material may not be available.                                          

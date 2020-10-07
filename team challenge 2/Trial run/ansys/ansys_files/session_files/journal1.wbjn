@@ -1,0 +1,20 @@
+# encoding: utf-8
+# 2020 R1
+SetScriptVersion(Version="20.1.164")
+Save(Overwrite=True)
+template1 = GetTemplate(
+    TemplateName="Static Structural",
+    Solver="ANSYS")
+system1 = template1.CreateSystem()
+geometry1 = system1.GetContainer(ComponentName="Geometry")
+geometryProperties1 = geometry1.GetGeometryProperties()
+geometryProperties1.GeometryImportComparePartsOnUpdate = "ComparePartsMethod_Associatively"
+geometry1.SetFile(
+    FilePath=GetAbsoluteUserPathName("repos/team_18/team challenge 2/Trial run/trial_run.SLDASM"),
+    PlugInName="SOLIDWORKS[17700]")
+modelComponent1 = system1.GetComponent(Name="Model")
+modelComponent1.Refresh()
+model1 = system1.GetContainer(ComponentName="Model")
+model1.Edit()
+model1.Edit()
+Save(Overwrite=True)

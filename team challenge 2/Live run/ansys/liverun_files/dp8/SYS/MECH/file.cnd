@@ -1,0 +1,62 @@
+<SOLUTION>
+<HEADER FRQ="ITERATION">
+ <COLUMN ID="    1">Contact Pair ID</COLUMN>
+ <COLUMN ID="    2">Number of Contact Elements in Contact</COLUMN>
+ <COLUMN ID="    3">Number of Contact Elements in Contact (Sticking)</COLUMN>
+ <COLUMN ID="    4">Max. Chattering Level</COLUMN>
+ <COLUMN ID="    5">Max. Penetration/Min. Gap</COLUMN>
+ <COLUMN ID="    6">Max. Closed Gap</COLUMN>
+ <COLUMN ID="    7">Max. Normal Stiffness</COLUMN>
+ <COLUMN ID="    8">Min. Normal Stiffness</COLUMN>
+ <COLUMN ID="    9">Max. Resulting Pinball</COLUMN>
+ <COLUMN ID="   10">Max. Elastic Slip Distance</COLUMN>
+ <COLUMN ID="   11">Max. Tangential Stiffness</COLUMN>
+ <COLUMN ID="   12">Min. Tangential Stiffness</COLUMN>
+ <COLUMN ID="   13">Max. Sliding Distance</COLUMN>
+ <COLUMN ID="   14">Max. Contact Pressure</COLUMN>
+ <COLUMN ID="   15">Max. Friction Stress</COLUMN>
+ <COLUMN ID="   16">Average Contact Depth</COLUMN>
+ <COLUMN ID="   17">Max. Closed Penetration</COLUMN>
+ <COLUMN ID="   18">Number of Contact Points Have Too Much Penetration</COLUMN>
+ <COLUMN ID="   19">Contacting Area</COLUMN>
+ <COLUMN ID="   20">Max. Contact Damping Pressure</COLUMN>
+ <COLUMN ID="   21">Max. Contact Damping Tangential stress</COLUMN>
+ <COLUMN ID="   22">Max. Sliding Distance including near field</COLUMN>
+ <COLUMN ID="   23">Min. Sliding Distance including near field</COLUMN>
+ <COLUMN ID="   24">Max. normal fluid penetration pressure on contact surface</COLUMN>
+ <COLUMN ID="   25">Max. normal fluid penetration pressure on target surface</COLUMN>
+ <COLUMN ID="   26">Total volume loss due to wear on contact surface</COLUMN>
+ <COLUMN ID="   27">Total strain energy due to contact</COLUMN>
+ <COLUMN ID="   28">Frictional dissipation energy</COLUMN>
+ <COLUMN ID="   29">Contact damping dissipation energy</COLUMN>
+ <COLUMN ID="   30">WB contact pair ID</COLUMN>
+ <COLUMN ID="   31">Total contact force due to pressure -x component</COLUMN>
+ <COLUMN ID="   32">Total contact force due to pressure -y component</COLUMN>
+ <COLUMN ID="   33">Total contact force due to pressure -z component</COLUMN>
+ <COLUMN ID="   34">Total contact force due to tangential stress -x component</COLUMN>
+ <COLUMN ID="   35">Total contact force due to tangential stress -y component</COLUMN>
+ <COLUMN ID="   36">Total contact force due to tangential stress -z component</COLUMN>
+ <COLUMN ID="   37">Number of Contact Points Have Too Much sliding</COLUMN>
+ <COLUMN ID="   38">Contact pair force convergence norm</COLUMN>
+ <COLUMN ID="   39">Contact pair force criterion</COLUMN>
+ <COLUMN ID="   40">Max. tangential fluid penetration pressure on contact surface</COLUMN>
+ <COLUMN ID="   41">Max. tangential fluid penetration pressure on target surface</COLUMN>
+ <UNITS>MPA</UNITS>
+</HEADER>
+<COLDATA LOAD_STEP="        1" SUBSTEP="        1" ITERATION="        0" TIME="    0.000000    ">
+        5        -2         0         0    -8398.000         0.000000         0.000000         0.000000         8398.000         0.000000         0.000000         0.000000         0.000000         0.000000         0.000000         79.12626         0.000000             0     0.000000         0.000000         0.000000         0.000000         0.000000         0.000000         0.000000         0.000000         0.000000         0.000000         0.000000           100     0.000000         0.000000         0.000000         0.000000         0.000000         0.000000             0    0.000000         0.000000         0.000000         0.000000    
+        6        26        26         0    0.4547474E-12   -0.4547474E-12     505521.2         505521.2         17.61769         0.000000         553447.2         553447.2         0.000000        0.2298844E-06     0.000000         70.47076       -0.9094947E-12         0     14680.00         0.000000         0.000000         0.000000         0.000000         0.000000         0.000000         0.000000        0.4994072E-16     0.000000         0.000000           100     0.000000         0.000000         0.000000         0.000000         0.000000         0.000000             0    0.000000         0.000000         0.000000         0.000000    
+        7        26        26         0    0.4547474E-12   -0.9094947E-12     545942.4         545942.4         18.04410         0.000000         736391.0         736391.0         0.000000       -0.4965318E-06     0.000000         72.17642       -0.9094947E-12         0     12080.00         0.000000         0.000000         0.000000         0.000000         0.000000         0.000000         0.000000        0.8094874E-16     0.000000         0.000000           103     0.000000         0.000000         0.000000         0.000000         0.000000         0.000000             0    0.000000         0.000000         0.000000         0.000000    
+        8        -2         0         0    -8531.000         0.000000         0.000000         0.000000         8531.000         0.000000         0.000000         0.000000         0.000000         0.000000         0.000000         73.26780         0.000000             0     0.000000         0.000000         0.000000         0.000000         0.000000         0.000000         0.000000         0.000000         0.000000         0.000000         0.000000           103     0.000000         0.000000         0.000000         0.000000         0.000000         0.000000             0    0.000000         0.000000         0.000000         0.000000    
+        9        -2         0         0    -8610.000         0.000000         0.000000         0.000000         8610.000         0.000000         0.000000         0.000000         0.000000         0.000000         0.000000         87.54872         0.000000             0     0.000000         0.000000         0.000000         0.000000         0.000000         0.000000         0.000000         0.000000         0.000000         0.000000         0.000000           106     0.000000         0.000000         0.000000         0.000000         0.000000         0.000000             0    0.000000         0.000000         0.000000         0.000000    
+       10        30        30         0    0.2273737E-12   -0.2273737E-12     456888.5         456888.5         19.42403         0.000000         514527.5         514527.5         0.000000        0.1038844E-06     0.000000         77.69610       -0.4547474E-12         0     18620.00         0.000000         0.000000         0.000000         0.000000         0.000000         0.000000         0.000000        0.2369135E-16     0.000000         0.000000           106     0.000000         0.000000         0.000000         0.000000         0.000000         0.000000             0    0.000000         0.000000         0.000000         0.000000    
+</COLDATA>
+<COLDATA LOAD_STEP="        1" SUBSTEP="        1" ITERATION="        0" TIME="    1.000000    ">
+        5        -2         0         0    -8398.000         0.000000         0.000000         0.000000         8398.000         0.000000         0.000000         0.000000         0.000000         0.000000         0.000000         79.12626         0.000000             0     0.000000         0.000000         0.000000         0.000000         0.000000         0.000000         0.000000         0.000000         0.000000         0.000000         0.000000           100     0.000000         0.000000         0.000000         0.000000         0.000000         0.000000             0    0.000000         0.000000         0.000000         0.000000    
+        6        26        26         0    0.4547474E-12   -0.4547474E-12     505521.2         505521.2         17.61769         0.000000         553447.2         553447.2         0.000000        0.2298844E-06     0.000000         70.47076       -0.9094947E-12         0     14680.00         0.000000         0.000000         0.000000         0.000000         0.000000         0.000000         0.000000        0.4994072E-16     0.000000         0.000000           100     0.000000         0.000000         0.000000         0.000000         0.000000         0.000000             0    0.000000         0.000000         0.000000         0.000000    
+        7        26        26         0    0.4547474E-12   -0.9094947E-12     545942.4         545942.4         18.04410         0.000000         736391.0         736391.0         0.000000       -0.4965318E-06     0.000000         72.17642       -0.9094947E-12         0     12080.00         0.000000         0.000000         0.000000         0.000000         0.000000         0.000000         0.000000        0.8094874E-16     0.000000         0.000000           103     0.000000         0.000000         0.000000         0.000000         0.000000         0.000000             0    0.000000         0.000000         0.000000         0.000000    
+        8        -2         0         0    -8531.000         0.000000         0.000000         0.000000         8531.000         0.000000         0.000000         0.000000         0.000000         0.000000         0.000000         73.26780         0.000000             0     0.000000         0.000000         0.000000         0.000000         0.000000         0.000000         0.000000         0.000000         0.000000         0.000000         0.000000           103     0.000000         0.000000         0.000000         0.000000         0.000000         0.000000             0    0.000000         0.000000         0.000000         0.000000    
+        9        -2         0         0    -8610.000         0.000000         0.000000         0.000000         8610.000         0.000000         0.000000         0.000000         0.000000         0.000000         0.000000         87.54872         0.000000             0     0.000000         0.000000         0.000000         0.000000         0.000000         0.000000         0.000000         0.000000         0.000000         0.000000         0.000000           106     0.000000         0.000000         0.000000         0.000000         0.000000         0.000000             0    0.000000         0.000000         0.000000         0.000000    
+       10        30        30         0    0.2273737E-12   -0.2273737E-12     456888.5         456888.5         19.42403         0.000000         514527.5         514527.5         0.000000        0.1038844E-06     0.000000         77.69610       -0.4547474E-12         0     18620.00         0.000000         0.000000         0.000000         0.000000         0.000000         0.000000         0.000000        0.2369135E-16     0.000000         0.000000           106     0.000000         0.000000         0.000000         0.000000         0.000000         0.000000             0    0.000000         0.000000         0.000000         0.000000    
+</COLDATA>
+</SOLUTION>

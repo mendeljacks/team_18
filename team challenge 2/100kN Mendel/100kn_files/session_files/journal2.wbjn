@@ -1,0 +1,45 @@
+# encoding: utf-8
+# 2020 R1
+SetScriptVersion(Version="20.1.164")
+system1 = GetSystem(Name="RSR")
+system1.Delete()
+system2 = GetSystem(Name="SYS")
+setup1 = system2.GetContainer(ComponentName="Setup")
+setup1.Edit()
+geometryComponent1 = system2.GetComponent(Name="Geometry")
+geometryComponent1.Update(AllDependencies=True)
+geometry1 = system2.GetContainer(ComponentName="Geometry")
+geometry1.SetFile(
+    FilePath=GetAbsoluteUserPathName("repos/team_18/team challenge 2/50kN Mendel/Assembly.SLDASM"),
+    PlugInName="SOLIDWORKS[31432]")
+modelComponent1 = system2.GetComponent(Name="Model")
+modelComponent1.Refresh()
+model1 = system2.GetContainer(ComponentName="Model")
+model1.Edit()
+Save(Overwrite=True)
+designPoint1 = Parameters.GetDesignPoint(Name="1")
+parameter1 = Parameters.GetParameter(Name="P7")
+designPoint1.SetParameterExpression(
+    Parameter=parameter1,
+    Expression="1000")
+designPoint2 = Parameters.GetDesignPoint(Name="0")
+designPoint2.SetParameterExpression(
+    Parameter=parameter1,
+    Expression="1000")
+parameter2 = Parameters.GetParameter(Name="P8")
+designPoint2.SetParameterExpression(
+    Parameter=parameter2,
+    Expression="400")
+parameter3 = Parameters.GetParameter(Name="P9")
+designPoint2.SetParameterExpression(
+    Parameter=parameter3,
+    Expression="300")
+parameter4 = Parameters.GetParameter(Name="P10")
+designPoint2.SetParameterExpression(
+    Parameter=parameter4,
+    Expression="300")
+backgroundSession1 = UpdateAllDesignPoints(DesignPoints=[designPoint2])
+model1.Edit()
+results1 = system2.GetContainer(ComponentName="Results")
+results1.Edit()
+Save(Overwrite=True)

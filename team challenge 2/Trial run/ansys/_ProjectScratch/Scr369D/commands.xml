@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<jobCommands version="2" wait="True">
+
+  <distributed>true</distributed>
+
+  <cores>2</cores>
+
+  <environment/>
+
+  <command name="Ansys Solver">
+    <application>
+      <app platform="win32|winx64">%AWP_ROOT201%\SEC\SolverExecutionController\runsec.bat</app>
+      <app platform="linia32|linx64">%AWP_ROOT201%/SEC/SolverExecutionController/runsec.sh</app>
+    </application>
+    <arguments/>
+  </command>
+
+</jobCommands>
