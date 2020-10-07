@@ -1,0 +1,54 @@
+# encoding: utf-8
+# 2020 R1
+SetScriptVersion(Version="20.1.164")
+system1 = GetSystem(Name="SYS")
+results1 = system1.GetContainer(ComponentName="Results")
+results1.Edit()
+designPoint1 = Parameters.GetDesignPoint(Name="0")
+parameter1 = Parameters.GetParameter(Name="P10")
+designPoint1.SetParameterExpression(
+    Parameter=parameter1,
+    Expression="100")
+backgroundSession1 = UpdateAllDesignPoints(DesignPoints=[designPoint1])
+results1.Edit()
+designPoint1.SetParameterExpression(
+    Parameter=parameter1,
+    Expression="50")
+designPoint1.SetParameterExpression(
+    Parameter=parameter1,
+    Expression="100")
+designPoint2 = Parameters.GetDesignPoint(Name="1")
+designPoint2.SetParameterExpression(
+    Parameter=parameter1,
+    Expression="50")
+designPoint2.Retained = True
+Parameters.SetBaseDesignPoint(DesignPoint=designPoint2)
+backgroundSession2 = UpdateAllDesignPoints(DesignPoints=[designPoint2])
+results1.Edit()
+designPoint2.SetParameterExpression(
+    Parameter=parameter1,
+    Expression="80")
+backgroundSession3 = UpdateAllDesignPoints(DesignPoints=[designPoint2])
+results1.Edit()
+parameter2 = Parameters.GetParameter(Name="P10")
+designPoint2.SetParameterExpression(
+    Parameter=parameter2,
+    Expression="100")
+backgroundSession4 = UpdateAllDesignPoints(DesignPoints=[designPoint2])
+results1.Edit()
+parameter3 = Parameters.GetParameter(Name="P9")
+designPoint2.SetParameterExpression(
+    Parameter=parameter3,
+    Expression="300")
+parameter4 = Parameters.GetParameter(Name="P8")
+designPoint2.SetParameterExpression(
+    Parameter=parameter4,
+    Expression="400")
+backgroundSession5 = UpdateAllDesignPoints(DesignPoints=[designPoint2])
+results1.Edit()
+Save(Overwrite=True)
+Reset()
+Extensions.UnloadExtension(
+    Id="5e7e01a6-8601-11e8-9f8c-28f10e13ffe6",
+    Version="2020.1",
+    Format="Binary")

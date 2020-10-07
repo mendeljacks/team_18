@@ -1,0 +1,68 @@
+﻿# 
+# This file contains the parameter values of the Design Points successfully updated by ANSYS Workbench.
+# Project name: liverun
+# Creation date: 10/06/2020 22:40:59
+# 
+# 10/06/2020 22:40:59
+# The parameters defined in the project are:
+# ,P1 - Geometry Mass [kg],P2 - Equivalent Stress Maximum [MPa]
+# 
+# The following header line defines the name of the columns by reference to the parameters.
+Name,P1,P2
+DP 0,549.8925,100.19380965916771
+# 
+# 10/06/2020 22:46:38
+# Parameters have been added and/or removed. The parameters now defined in the project are:
+# ,P1 - Geometry Mass [kg],P2 - Equivalent Stress Maximum [MPa],P3 - ANS_h5,P4 - ANS_w5,P5 - ANS_h4,P6 - ANS_w4,P7 - ANS_h3,P8 - ANS_w3,P9 - ANS_h2,P10 - ANS_w2
+# 
+# The following header line defines the name of the columns by reference to the parameters.
+Name,P1,P2,P3,P4,P5,P6,P7,P8,P9,P10
+DP 1,551.65874999999971,92.936876341986618,120,40,419,75,565,111,711,125
+DP 2,619.65937499999973,77.873123800912268,145,32,472,86,653,127,830,139
+DP 3,553.62124999999992,86.94300681023816,120,50,419,75,565,111,711,125
+# 
+# A non parametric change occurred and invalidated design point results.
+# 10/06/2020 23:04:12
+# 
+# 
+# 10/06/2020 23:06:54
+# Parameters have been added and/or removed. The parameters now defined in the project are:
+# ,P1 - Geometry Mass [kg],P2 - Equivalent Stress Maximum [MPa],P3 - ANS_h5,P4 - ANS_w5,P5 - ANS_h4,P6 - ANS_w4,P7 - ANS_h3,P8 - ANS_w3,P9 - ANS_h2,P10 - ANS_w2,P11 - ANS_h1,P12 - ANS_w1
+# 
+# The following header line defines the name of the columns by reference to the parameters.
+Name,P1,P2,P3,P4,P5,P6,P7,P8,P9,P10,P11,P12
+DP 4,478.26125000000025,2213.047897991235,120,50,419,75,565,111,711,125,80,130
+DP 4,548.91124999999943,89.302987910279114,120,50,419,75,565,111,711,125,800,130
+DP 5,546.55625000000009,97.47672969887752,100,50,419,75,500,111,750,125,830,139
+DP 6,548.71499999999946,95.816839169009086,200,50,419,75,500,111,711,125,830,139
+DP 2,619.65937499999973,77.509714627721507,145,32,472,86,653,127,830,139,830,139
+DP 7,510.7504214897192,381.22223594219628,145,32,472,86,653,127,830,139,830,139
+DP 7,557.28129648971935,117.97004449874829,120,32,472,86,653,127,830,139,830,139
+DP 7,351.55035147887963,343.27795368513989,120,32,472,86,653,127,830,139,830,139
+# 
+# A non parametric change occurred and invalidated design point results.
+# 10/06/2020 23:35:35
+# 
+DP 7,394.19409181916518,172.07104189385819,120,32,472,86,653,127,711,139,800,139
+# 
+# A non parametric change occurred and invalidated design point results.
+# 10/06/2020 23:42:15
+# 
+DP 7,484.48748893509241,90.85254412849099,120,32,472,86,565,127,711,139,800,139
+# 
+# A non parametric change occurred and invalidated design point results.
+# 10/06/2020 23:52:05
+# 
+DP 7,456.41460945932408,91.154059204248256,120,32,472,86,520,127,711,130,800,135
+DP 7,456.41460945932408,91.154059204248256,120,32,472,86,520,127,711,130,800,135
+# 
+# A non parametric change occurred and invalidated design point results.
+# 10/07/2020 00:02:18
+# 
+DP 8,444.52854757173594,93.539724616006467,120,32,472,86,520,127,711,130,790,135
+DP 8,443.54729757173607,103.39757828750928,120,32,472,86,520,127,711,130,790,130
+DP 8,444.835717544996,91.687506926348,120,32,472,86,520,127,711,130,800,135
+# 
+# A non parametric change occurred and invalidated design point results.
+# 10/07/2020 00:14:50
+# 

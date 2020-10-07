@@ -1,0 +1,223 @@
+# encoding: utf-8
+# 2020 R1
+SetScriptVersion(Version="20.1.164")
+template1 = GetTemplate(
+    TemplateName="Static Structural",
+    Solver="ANSYS")
+system1 = template1.CreateSystem()
+geometry1 = system1.GetContainer(ComponentName="Geometry")
+geometryProperties1 = geometry1.GetGeometryProperties()
+geometryProperties1.GeometryImportComparePartsOnUpdate = "ComparePartsMethod_Associatively"
+geometry1.SetFile(
+    FilePath="C:/Users/mende/Desktop/TC2 Beam Package Space Assy - 4 members/Beam Package Space Assy.SLDASM",
+    PlugInName="SOLIDWORKS[10884]")
+modelComponent1 = system1.GetComponent(Name="Model")
+modelComponent1.Refresh()
+model1 = system1.GetContainer(ComponentName="Model")
+model1.Edit()
+Save(Overwrite=True)
+setup1 = system1.GetContainer(ComponentName="Setup")
+setup1.Edit()
+designPoint1 = Parameters.CreateDesignPoint()
+parameter1 = Parameters.GetParameter(Name="P4")
+designPoint1.SetParameterExpression(
+    Parameter=parameter1,
+    Expression="40")
+designPoint1.Retained = True
+backgroundSession1 = UpdateAllDesignPoints(DesignPoints=[designPoint1])
+results1 = system1.GetContainer(ComponentName="Results")
+results1.Edit()
+Parameters.SetBaseDesignPoint(DesignPoint=designPoint1)
+results1.Edit()
+unitSystem1 = SetProjectUnitSystem(UnitSystemName="NMM_STANDARD")
+Save(Overwrite=True)
+designPoint2 = Parameters.CreateDesignPoint()
+parameter2 = Parameters.GetParameter(Name="P3")
+designPoint2.SetParameterExpression(
+    Parameter=parameter2,
+    Expression="145")
+designPoint2.SetParameterExpression(
+    Parameter=parameter1,
+    Expression="32")
+parameter3 = Parameters.GetParameter(Name="P5")
+designPoint2.SetParameterExpression(
+    Parameter=parameter3,
+    Expression="472")
+parameter4 = Parameters.GetParameter(Name="P6")
+designPoint2.SetParameterExpression(
+    Parameter=parameter4,
+    Expression="86")
+parameter5 = Parameters.GetParameter(Name="P7")
+designPoint2.SetParameterExpression(
+    Parameter=parameter5,
+    Expression="653")
+parameter6 = Parameters.GetParameter(Name="P8")
+designPoint2.SetParameterExpression(
+    Parameter=parameter6,
+    Expression="127")
+parameter7 = Parameters.GetParameter(Name="P9")
+designPoint2.SetParameterExpression(
+    Parameter=parameter7,
+    Expression="830")
+parameter8 = Parameters.GetParameter(Name="P10")
+designPoint2.SetParameterExpression(
+    Parameter=parameter8,
+    Expression="139")
+backgroundSession2 = UpdateAllDesignPoints(DesignPoints=[designPoint2])
+Save(Overwrite=True)
+Archive(
+    FilePath="C:/Users/mende/Desktop/liverun.wbpz",
+    IncludeExternalImportedFiles=True)
+designPoint3 = Parameters.CreateDesignPoint()
+designPoint3.SetParameterExpression(
+    Parameter=parameter1,
+    Expression="50")
+backgroundSession3 = UpdateAllDesignPoints(DesignPoints=[designPoint3])
+results1.Edit()
+model1.Exit()
+designPoint3.Retained = True
+Parameters.SetBaseDesignPoint(DesignPoint=designPoint3)
+modelComponent1.Refresh()
+setupComponent1 = system1.GetComponent(Name="Setup")
+setupComponent1.Refresh()
+solutionComponent1 = system1.GetComponent(Name="Solution")
+solutionComponent1.Refresh()
+resultsComponent1 = system1.GetComponent(Name="Results")
+resultsComponent1.Refresh()
+results1.Edit()
+designPoint4 = Parameters.CreateDesignPoint()
+parameter9 = Parameters.GetParameter(Name="P11")
+designPoint4.SetParameterExpression(
+    Parameter=parameter9,
+    Expression="80")
+parameter10 = Parameters.GetParameter(Name="P12")
+designPoint4.SetParameterExpression(
+    Parameter=parameter10,
+    Expression="130")
+backgroundSession4 = UpdateAllDesignPoints(DesignPoints=[designPoint4])
+designPoint5 = Parameters.CreateDesignPoint()
+designPoint5.SetParameterExpression(
+    Parameter=parameter2,
+    Expression="120")
+designPoint4.SetParameterExpression(
+    Parameter=parameter9,
+    Expression="800")
+backgroundSession5 = UpdateAllDesignPoints(DesignPoints=[designPoint4])
+designPoint5.SetParameterExpression(
+    Parameter=parameter7,
+    Expression="750")
+designPoint5.SetParameterExpression(
+    Parameter=parameter5,
+    Expression="500")
+designPoint5.SetParameterExpression(
+    Parameter=parameter2,
+    Expression="100")
+backgroundSession6 = UpdateAllDesignPoints(DesignPoints=[designPoint5])
+designPoint6 = designPoint1.Duplicate()
+designPoint6.SetParameterExpression(
+    Parameter=parameter2,
+    Expression="150")
+designPoint6.SetParameterExpression(
+    Parameter=parameter1,
+    Expression="50")
+designPoint6.SetParameterExpression(
+    Parameter=parameter2,
+    Expression="200")
+designPoint6.SetParameterExpression(
+    Parameter=parameter5,
+    Expression="500")
+backgroundSession7 = UpdateAllDesignPoints(DesignPoints=[designPoint6])
+designPoint2.Retained = True
+designPoint5.Retained = True
+designPoint4.Retained = True
+Parameters.SetBaseDesignPoint(DesignPoint=designPoint2)
+backgroundSession8 = UpdateAllDesignPoints(DesignPoints=[designPoint2])
+designPoint7 = designPoint2.Duplicate()
+Parameters.SetBaseDesignPoint(DesignPoint=designPoint7)
+designPoint7.SetParameterExpression(
+    Parameter=parameter10,
+    Expression="138")
+backgroundSession9 = UpdateAllDesignPoints(DesignPoints=[designPoint7])
+designPoint7.SetParameterExpression(
+    Parameter=parameter2,
+    Expression="120")
+backgroundSession10 = UpdateAllDesignPoints(DesignPoints=[designPoint7])
+results1.Edit()
+designPoint7.SetParameterExpression(
+    Parameter=parameter2,
+    Expression="125")
+backgroundSession11 = UpdateAllDesignPoints(DesignPoints=[designPoint7])
+results1.Edit()
+designPoint7.SetParameterExpression(
+    Parameter=parameter9,
+    Expression="800")
+designPoint7.SetParameterExpression(
+    Parameter=parameter7,
+    Expression="711")
+backgroundSession12 = UpdateAllDesignPoints(DesignPoints=[designPoint7])
+results1.Edit()
+designPoint7.SetParameterExpression(
+    Parameter=parameter5,
+    Expression="565")
+backgroundSession13 = UpdateAllDesignPoints(DesignPoints=[designPoint7])
+backgroundSession13 = UpdateAllDesignPoints(DesignPoints=[designPoint7])
+results1.Edit()
+designPoint7.SetParameterExpression(
+    Parameter=parameter9,
+    Expression="830")
+designPoint7.SetParameterExpression(
+    Parameter=parameter10,
+    Expression="130")
+backgroundSession14 = UpdateAllDesignPoints(DesignPoints=[designPoint7])
+results1.Edit()
+designPoint7.SetParameterExpression(
+    Parameter=parameter5,
+    Expression="520")
+designPoint7.SetParameterExpression(
+    Parameter=parameter10,
+    Expression="135")
+designPoint7.SetParameterExpression(
+    Parameter=parameter8,
+    Expression="130")
+backgroundSession15 = UpdateAllDesignPoints(DesignPoints=[designPoint7])
+modelComponent1.Refresh()
+setupComponent1.Refresh()
+solutionComponent1.Refresh()
+resultsComponent1.Refresh()
+results1.Edit()
+designPoint7.SetParameterExpression(
+    Parameter=parameter3,
+    Expression="450")
+backgroundSession15 = UpdateAllDesignPoints(DesignPoints=[designPoint7])
+designPoint7.SetParameterExpression(
+    Parameter=parameter9,
+    Expression="750")
+designPoint7.SetParameterExpression(
+    Parameter=parameter7,
+    Expression="680")
+backgroundSession16 = UpdateAllDesignPoints(DesignPoints=[designPoint7])
+results1.Edit()
+designPoint7.SetParameterExpression(
+    Parameter=parameter9,
+    Expression="790")
+designPoint8 = Parameters.CreateDesignPoint()
+designPoint8.SetParameterExpression(
+    Parameter=parameter9,
+    Expression="790")
+model1.Exit()
+designPoint8.Retained = True
+Parameters.SetBaseDesignPoint(DesignPoint=designPoint8)
+backgroundSession17 = UpdateAllDesignPoints(DesignPoints=[designPoint8])
+designPoint8.SetParameterExpression(
+    Parameter=parameter10,
+    Expression="130")
+backgroundSession18 = UpdateAllDesignPoints(DesignPoints=[designPoint8])
+designPoint8.SetParameterExpression(
+    Parameter=parameter10,
+    Expression="135")
+designPoint8.SetParameterExpression(
+    Parameter=parameter9,
+    Expression="800")
+backgroundSession19 = UpdateAllDesignPoints(DesignPoints=[designPoint8])
+results1.Edit()
+Save(Overwrite=True)

@@ -1,0 +1,23 @@
+
+ *** The AWP_ROOT201 environment variable is set to: C:\Program Files\ANSYS Inc\v201
+
+ *** The AWP_LOCALE201 environment variable is set to: en-us
+
+ *** The ANSYS201_DIR environment variable is set to: C:\Program Files\ANSYS Inc\v201\ANSYS
+
+ *** The ANSYS_SYSDIR environment variable is set to: winx64
+
+ *** The ANSYS_SYSDIR32 environment variable is set to: intel
+
+ *** The CADOE_DOCDIR201 environment variable is set to: C:\Program Files\ANSYS Inc\v201\CommonFiles\help\en-us\solviewer
+
+ *** The CADOE_LIBDIR201 environment variable is set to: C:\Program Files\ANSYS Inc\v201\CommonFiles\Language\en-us
+
+ *** The LSTC_LICENSE environment variable is set to: ANSYS
+
+ *** The P_SCHEMA environment variable is set to: C:\Program Files\ANSYS Inc\v201\AISOL\CADIntegration\Parasolid\PSchema
+
+ *** The TEMP environment variable is set to: C:\Users\mende\AppData\Local\Temp
+
+[proxy:0:0@pc] ..\hydra\utils\sock\sock.c (270): unable to connect from "pc" to "pc" (No error)
+[proxy:0:0@pc] ..\hydra\pm\pmiserv\pmip.c (468): unable to connect to server pc at port 64033 (check for firewalls!)
