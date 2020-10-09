@@ -1,0 +1,60 @@
+# encoding: utf-8
+# 2020 R1
+SetScriptVersion(Version="20.1.164")
+system1 = GetSystem(Name="SYS 4")
+model1 = system1.GetContainer(ComponentName="Model")
+model1.Edit()
+model1.Exit()
+system1.DisplayText = "1.30 tolerance - 303 kg - fails (just) - disregard this tolerance and lower"
+Save(Overwrite=True)
+system2 = GetSystem(Name="SYS 5")
+model2 = system2.GetContainer(ComponentName="Model")
+model2.Edit()
+Save(Overwrite=True)
+model2.Exit()
+template1 = GetTemplate(TemplateName="Geometry")
+system3 = template1.CreateSystem(
+    Position="Right",
+    RelativeTo=system2)
+template2 = GetTemplate(
+    TemplateName="Static Structural",
+    Solver="ANSYS")
+geometryComponent1 = system3.GetComponent(Name="Geometry")
+system4 = template2.CreateSystem(
+    ComponentsToShare=[geometryComponent1],
+    Position="Right",
+    RelativeTo=system3)
+geometry1 = system3.GetContainer(ComponentName="Geometry")
+geometry1.SetFile(
+    FilePath=GetAbsoluteUserPathName("Monash University/Year 6/Semester 2/MEC4407 - Design 3/team_18/team challenge 2/100kN Alex/CAD/1.50 tolerance assembly.SLDASM"),
+    PlugInName="SOLIDWORKS[16204]")
+system4.DisplayText = "1.50 tolerance -"
+modelComponent1 = system4.GetComponent(Name="Model")
+modelComponent1.Refresh()
+model3 = system4.GetContainer(ComponentName="Model")
+model3.Edit()
+system4.DisplayText = "1.50 tolerance - 374 kg -"
+system4.DisplayText = "1.50 tolerance - 374 kg - maybe passes if ignoring singularity condition - cut extrudes supressed"
+system5 = GetSystem(Name="SYS 6")
+system6 = template1.CreateSystem(
+    Position="Right",
+    RelativeTo=system5)
+geometryComponent2 = system6.GetComponent(Name="Geometry")
+system7 = template2.CreateSystem(
+    ComponentsToShare=[geometryComponent2],
+    Position="Right",
+    RelativeTo=system6)
+geometry2 = system6.GetContainer(ComponentName="Geometry")
+geometry2.Edit(IsSpaceClaimGeometry=True)
+geometry2.Exit()
+geometry2.SetFile(FilePath=GetAbsoluteUserPathName("Monash University/Year 6/Semester 2/MEC4407 - Design 3/team_18/team challenge 2/100kN Alex/CAD/2.00 tolerance assembly.SLDASM"))
+system7.DisplayText = "2.0 tolerance"
+modelComponent2 = system7.GetComponent(Name="Model")
+modelComponent2.Refresh()
+model4 = system7.GetContainer(ComponentName="Model")
+model4.Edit()
+system7.DisplayText = "2.0 tolerance - 442 kg -"
+system7.DisplayText = "2.0 tolerance - 442 kg - evidence of singularity points - cut extrudes suppressed"
+Save(Overwrite=True)
+Save(Overwrite=True)
+Save(Overwrite=True)
