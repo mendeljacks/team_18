@@ -4,3 +4,9 @@ SetScriptVersion(Version="20.1.164")
 system1 = GetSystem(Name="SYS")
 results1 = system1.GetContainer(ComponentName="Results")
 results1.Edit()
+Save(Overwrite=True)
+Reset()
+Extensions.UnloadExtension(
+    Id="5e7e01a6-8601-11e8-9f8c-28f10e13ffe6",
+    Version="2020.1",
+    Format="Binary")

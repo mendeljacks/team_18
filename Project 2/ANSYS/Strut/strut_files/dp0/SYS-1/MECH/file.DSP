@@ -5,39 +5,39 @@
  = multifrontal statistics =
  ===========================
 
-     number of equations                     =          113358
-     no. of nonzeroes in lower triangle of a =         4102251
-     no. of nonzeroes in the factor l        =        30787783
+     number of equations                     =          112788
+     no. of nonzeroes in lower triangle of a =         4097862
+     no. of nonzeroes in the factor l        =        30032111
      ratio of nonzeroes in factor (min/max)  =          1.0000
-     number of super nodes                   =            5300
-     maximum order of a front matrix         =            1437
-     maximum size of a front matrix          =         1033203
-     maximum size of a front trapezoid       =          480816
-     no. of floating point ops for factor    =      1.2996D+10
-     no. of floating point ops for solve     =      1.1440D+08
+     number of super nodes                   =            5254
+     maximum order of a front matrix         =            1260
+     maximum size of a front matrix          =          794430
+     maximum size of a front trapezoid       =          426090
+     no. of floating point ops for factor    =      1.1683D+10
+     no. of floating point ops for solve     =      1.1143D+08
      ratio of flops for factor (min/max)     =          1.0000
      negative pivot monitoring activated
      number of negative pivots encountered   =               0
      factorization panel size                =             128
      number of cores used                    =               1
-     time (cpu & wall) for structure input   =        0.015625        0.004000
-     time (cpu & wall) for ordering          =        0.640625        0.663000
+     time (cpu & wall) for structure input   =        0.000000        0.005000
+     time (cpu & wall) for ordering          =        0.687500        0.711000
      time (cpu & wall) for other matrix prep =        0.000000        0.000000
      time (cpu & wall) for value input       =        0.000000        0.000000
-     time (cpu & wall) for matrix distrib.   =        0.171875        0.171000
-     time (cpu & wall) for numeric factor    =        0.859375        0.878000
-     computational rate (gflops) for factor  =       15.122374       14.801583
-     time (cpu & wall) for numeric solve     =        0.046875        0.051000
-     computational rate (gflops) for solve   =        2.440613        2.243210
-     effective I/O rate (GB/sec) for solve   =        9.092713        8.357273
+     time (cpu & wall) for matrix distrib.   =        0.250000        0.246000
+     time (cpu & wall) for numeric factor    =        0.781250        0.800000
+     computational rate (gflops) for factor  =       14.954556       14.604059
+     time (cpu & wall) for numeric solve     =        0.031250        0.043000
+     computational rate (gflops) for solve   =        3.565896        2.591494
+     effective I/O rate (GB/sec) for solve   =       13.285053        9.654835
 
      i/o stats: unit-Core          file length             amount transferred
                                  words       mbytes          words       mbytes
                    ----     ----------     --------     ----------     --------
-                95-   0       1114112.        8. MB       1108944.        8. MB
+                95-   0       1114112.        8. MB       1101640.        8. MB
 
                 -------     ----------     --------     ----------     --------
-                Totals:       1114112.        8. MB       1108944.        8. MB
+                Totals:       1114112.        8. MB       1101640.        8. MB
 
 
-  Total Solver Memory allocated              =      398.167 MB
+  Total Solver Memory allocated              =      392.816 MB

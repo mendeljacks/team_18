@@ -6,7 +6,7 @@
 /solu
 antype,,restart,,,perturbation
 *DIM,_wb_ProjectScratch_dir_Buckling,string,248
-_wb_ProjectScratch_dir_Buckling(1)= 'C:\Users\mende\Documents\repos\team_18\Project 2\ANSYS\Strut\_ProjectScratch\Scr6759\'
+_wb_ProjectScratch_dir_Buckling(1)= 'C:\Users\mende\Documents\repos\team_18\Project 2\ANSYS\Strut\_ProjectScratch\ScrEA5C\'
 *DIM,_wb_SolverFiles_dir_Buckling,string,248
 _wb_SolverFiles_dir_Buckling(1)= 'C:\Users\mende\Documents\repos\team_18\Project 2\ANSYS\Strut\strut_files\dp0\SYS-1\MECH\'
 *DIM,_wb_userfiles_dir_Buckling,string,248

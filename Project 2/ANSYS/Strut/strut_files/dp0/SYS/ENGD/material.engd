@@ -281,7 +281,7 @@
               <Qualifier name="Localized Name">Interpolation Options</Qualifier>
             </ParameterValue>
             <ParameterValue parameter="pa25" format="float">
-              <Data>200000000000</Data>
+              <Data>69000000000</Data>
               <Qualifier name="Variable Type">Dependent</Qualifier>
               <Qualifier name="Localized Name">Young's Modulus</Qualifier>
             </ParameterValue>
@@ -291,12 +291,12 @@
               <Qualifier name="Localized Name">Poisson's Ratio</Qualifier>
             </ParameterValue>
             <ParameterValue parameter="pa27" format="float">
-              <Data>196078431372.549</Data>
+              <Data>67647058823.5294</Data>
               <Qualifier name="Variable Type">Dependent</Qualifier>
               <Qualifier name="Localized Name">Bulk Modulus</Qualifier>
             </ParameterValue>
             <ParameterValue parameter="pa28" format="float">
-              <Data>75187969924.812</Data>
+              <Data>25939849624.0602</Data>
               <Qualifier name="Variable Type">Dependent</Qualifier>
               <Qualifier name="Localized Name">Shear Modulus</Qualifier>
             </ParameterValue>
