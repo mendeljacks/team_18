@@ -1,20 +1,20 @@
-/COM,ANSYS RELEASE 2020 R1           BUILD 20.1      UP20191203       20:03:42
+/COM,ANSYS RELEASE 2020 R1           BUILD 20.1      UP20191203       18:59:45
 
- *** WARNING ***                         CP =       0.453   TIME= 20:03:46
+ *** WARNING ***                         CP =       0.484   TIME= 18:59:49
  Material number 4 (used by element 30848) should normally have at least 
  one MP or one TB type command associated with it.  Output of energy by  
  material may not be available.                                          
 
- *** WARNING ***                         CP =       2.188   TIME= 20:03:48
+ *** WARNING ***                         CP =       2.203   TIME= 18:59:51
  Element shape checking is currently inactive.  Issue SHPP,ON or         
  SHPP,WARN to reactivate, if desired.                                    
 
- *** WARNING ***                         CP =       2.219   TIME= 20:03:48
+ *** WARNING ***                         CP =       2.234   TIME= 18:59:51
  Material number 4 (used by element 30848) should normally have at least 
  one MP or one TB type command associated with it.  Output of energy by  
  material may not be available.                                          
 
- *** WARNING ***                         CP =       5.391   TIME= 20:03:51
+ *** WARNING ***                         CP =       5.922   TIME= 18:59:55
  A linear perturbation analysis with contact usually requires turning on 
  large deflection option (NLGEOM,ON) in the base analysis.  Otherwise    
  the down-stream analysis will not use the current deformation           
