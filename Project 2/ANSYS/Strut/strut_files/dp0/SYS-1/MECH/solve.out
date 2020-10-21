@@ -109,13 +109,13 @@
     SINGLE PROCESS WITH SINGLE THREAD REQUESTED
     TOTAL OF     1 CORES REQUESTED
   DESIGNXPLORER REQUESTED
-  INPUT FILE NAME              = C:\Users\mende\Documents\repos\team_18\Project 2\ANSYS\Strut\_ProjectScratch\Scr04A3\dummy.dat
-  OUTPUT FILE NAME             = C:\Users\mende\Documents\repos\team_18\Project 2\ANSYS\Strut\_ProjectScratch\Scr04A3\solve.out
+  INPUT FILE NAME              = C:\Users\mende\Documents\repos\team_18\Project 2\ANSYS\Strut\_ProjectScratch\Scr545D\dummy.dat
+  OUTPUT FILE NAME             = C:\Users\mende\Documents\repos\team_18\Project 2\ANSYS\Strut\_ProjectScratch\Scr545D\solve.out
   START-UP FILE MODE           = NOREAD
   STOP FILE MODE               = NOREAD
 
  RELEASE= 2020 R1              BUILD= 20.1      UP20191203   VERSION=WINDOWS x64 
- CURRENT JOBNAME=file  18:59:49  OCT 18, 2020 CP=      0.219
+ CURRENT JOBNAME=file  00:49:54  OCT 21, 2020 CP=      0.219
 
 
  PARAMETER _DS_PROGRESS =     999.0000000    
@@ -126,11 +126,11 @@
 
  DO NOT WRITE ELEMENT RESULTS INTO DATABASE
 
- *GET  _WALLSTRT  FROM  ACTI  ITEM=TIME WALL  VALUE=  18.9969444    
+ *GET  _WALLSTRT  FROM  ACTI  ITEM=TIME WALL  VALUE= 0.831666667    
 
  ASSIGN FILE RSTP TO file.rst                                                                                                                                                                                                                                                            
 
- *** NOTE ***                            CP =       0.250   TIME= 18:59:49
+ *** NOTE ***                            CP =       0.266   TIME= 00:49:54
  File= file.rst does not exist and will be created.                      
 
  *****  ANSYS SOLUTION ROUTINE  *****
@@ -148,15 +148,15 @@
 
  TITLE = strut--Static Structural (A5)                                         
  ANALYSIS TYPE =  STATIC (STEADY-STATE)
- NUMBER OF ELEMENT TYPES =      4
-     21317 ELEMENTS CURRENTLY SELECTED.  MAX ELEMENT NUMBER =       31055
-     38094 NODES CURRENTLY SELECTED.     MAX NODE NUMBER =          38284
+ NUMBER OF ELEMENT TYPES =      6
+     21526 ELEMENTS CURRENTLY SELECTED.  MAX ELEMENT NUMBER =       31265
+     38096 NODES CURRENTLY SELECTED.     MAX NODE NUMBER =          38286
          3 COMPONENTS CURRENTLY DEFINED
  MAXIMUM LINEAR PROPERTY NUMBER        =       1
- MAXIMUM REAL CONSTANT SET NUMBER      =       2
+ MAXIMUM REAL CONSTANT SET NUMBER      =       4
  ACTIVE COORDINATE SYSTEM              =       0  (CARTESIAN)  
- MAXIMUM CONSTRAINT EQUATION NUMBER    =       6
- NUMBER OF SPECIFIED CONSTRAINTS       =    1003
+ MAXIMUM CONSTRAINT EQUATION NUMBER    =      12
+ NUMBER OF SPECIFIED CONSTRAINTS       =     514
  NUMBER OF SPECIFIED SURFACE LOADS     =     208
  CURRENT LOAD CASE =      0 OF      0
  LOAD SET   =       1
@@ -173,13 +173,13 @@
 
  DELETE SOLID MODEL BOUNDARY CONDITIONS
  
- NUMBER OF NODAL CONSTRAINTS DELETED                       =      1003
+ NUMBER OF NODAL CONSTRAINTS DELETED                       =       514
  NUMBER OF ELEMENT PRESSURES DELETED                       =       208
 
  SET PARAMETER DIMENSIONS ON  _WB_PROJECTSCRATCH_DIR_BUCKLING
   TYPE=STRI  DIMENSIONS=      248        1        1
 
- PARAMETER _WB_PROJECTSCRATCH_DIR_BUCKLING(1) = C:\Users\mende\Documents\repos\team_18\Project 2\ANSYS\Strut\_ProjectScratch\Scr04A3\
+ PARAMETER _WB_PROJECTSCRATCH_DIR_BUCKLING(1) = C:\Users\mende\Documents\repos\team_18\Project 2\ANSYS\Strut\_ProjectScratch\Scr545D\
 
  SET PARAMETER DIMENSIONS ON  _WB_SOLVERFILES_DIR_BUCKLING
   TYPE=STRI  DIMENSIONS=      248        1        1
@@ -203,7 +203,7 @@
 
  *** ANSYS - ENGINEERING ANALYSIS SYSTEM  RELEASE 2020 R1          20.1     ***
  ANSYS Academic Research                           
- 00608699  VERSION=WINDOWS x64   18:59:49  OCT 18, 2020 CP=      0.469
+ 00608699  VERSION=WINDOWS x64   00:49:54  OCT 21, 2020 CP=      0.562
 
  strut--Eigenvalue Buckling (B5)                                               
 
@@ -218,16 +218,16 @@
    LINEAR PERTURBATION . . . . . . . . . . . . . .ON
    OFFSET TEMPERATURE FROM ABSOLUTE ZERO . . . . .  273.15    
 
- *** WARNING ***                         CP =       0.484   TIME= 18:59:49
- Material number 4 (used by element 30848) should normally have at least 
+ *** WARNING ***                         CP =       0.594   TIME= 00:49:54
+ Material number 6 (used by element 31058) should normally have at least 
  one MP or one TB type command associated with it.  Output of energy by  
  material may not be available.                                          
 
- *** NOTE ***                            CP =       0.500   TIME= 18:59:49
+ *** NOTE ***                            CP =       0.594   TIME= 00:49:54
  The step data was checked and warning messages were found.              
   Please review output or errors file (                                  
  C:\Users\mende\Documents\repos\team_18\Project                          
- 2\ANSYS\Strut\_ProjectScratch\Scr04A3\file.err ) for these warning      
+ 2\ANSYS\Strut\_ProjectScratch\Scr545D\file.err ) for these warning      
  messages.                                                               
 
                       L O A D   S T E P   O P T I O N S
@@ -238,7 +238,7 @@
       SUBSTEP. . . . . . . . . . . . . . . . . . .     1
    STRESS-STIFFENING . . . . . . . . . . . . . . .    ON
 
- *** NOTE ***                            CP =       0.750   TIME= 18:59:49
+ *** NOTE ***                            CP =       0.891   TIME= 00:49:54
  This SOLVE command is only used to generate the matrices needed to      
  perform the linear perturbation analysis.  The linear perturbation      
  analysis corresponds to time = 1 (load step = 1, substep = 1).  No      
@@ -277,15 +277,15 @@
 
  *****  ANSYS SOLVE    COMMAND  *****
 
- *** WARNING ***                         CP =       2.203   TIME= 18:59:51
+ *** WARNING ***                         CP =       2.781   TIME= 00:49:56
  Element shape checking is currently inactive.  Issue SHPP,ON or         
  SHPP,WARN to reactivate, if desired.                                    
 
- *** NOTE ***                            CP =       2.234   TIME= 18:59:51
+ *** NOTE ***                            CP =       2.812   TIME= 00:49:56
  The model data was checked and warning messages were found.             
   Please review output or errors file (                                  
  C:\Users\mende\Documents\repos\team_18\Project                          
- 2\ANSYS\Strut\_ProjectScratch\Scr04A3\file.err ) for these warning      
+ 2\ANSYS\Strut\_ProjectScratch\Scr545D\file.err ) for these warning      
  messages.                                                               
 
  *** SELECTION OF ELEMENT TECHNOLOGIES FOR APPLICABLE ELEMENTS ***
@@ -298,7 +298,7 @@
 
  *** ANSYS - ENGINEERING ANALYSIS SYSTEM  RELEASE 2020 R1          20.1     ***
  ANSYS Academic Research                           
- 00608699  VERSION=WINDOWS x64   18:59:51  OCT 18, 2020 CP=      2.234
+ 00608699  VERSION=WINDOWS x64   00:49:56  OCT 21, 2020 CP=      2.828
 
  strut--Eigenvalue Buckling (B5)                                               
 
@@ -315,16 +315,16 @@
    PRESTRESS EFFECTS INCLUDED IF AVAILABLE . . . .YES
    GLOBALLY ASSEMBLED MATRIX . . . . . . . . . . .SYMMETRIC  
 
- *** WARNING ***                         CP =       2.234   TIME= 18:59:51
- Material number 4 (used by element 30848) should normally have at least 
+ *** WARNING ***                         CP =       2.828   TIME= 00:49:56
+ Material number 6 (used by element 31058) should normally have at least 
  one MP or one TB type command associated with it.  Output of energy by  
  material may not be available.                                          
 
- *** NOTE ***                            CP =       2.250   TIME= 18:59:51
+ *** NOTE ***                            CP =       2.844   TIME= 00:49:56
  The step data was checked and warning messages were found.              
   Please review output or errors file (                                  
  C:\Users\mende\Documents\repos\team_18\Project                          
- 2\ANSYS\Strut\_ProjectScratch\Scr04A3\file.err ) for these warning      
+ 2\ANSYS\Strut\_ProjectScratch\Scr545D\file.err ) for these warning      
  messages.                                                               
 
                       L O A D   S T E P   O P T I O N S
@@ -338,9 +338,19 @@
       ETMP        ALL               
 
 
- *** NOTE ***                            CP =       2.297   TIME= 18:59:51
+ *** NOTE ***                            CP =       3.000   TIME= 00:49:57
  Force-distributed-surface identified by real constant set 2 and         
- contact element type 2 has been set up.  The pilot node 38283 is used   
+ contact element type 2 has been set up.  The pilot node 38284 is used   
+ to apply the force.  Internal MPC will be built.                        
+ The used degrees of freedom set is  UX   UY   UZ   ROTX ROTY ROTZ
+ Please verify constraints (including rotational degrees of freedom)
+  on the pilot node by yourself.
+ ****************************************
+  
+
+ *** NOTE ***                            CP =       3.000   TIME= 00:49:57
+ Force-distributed-surface identified by real constant set 4 and         
+ contact element type 4 has been set up.  The pilot node 38283 is used   
  to apply the force.  Internal MPC will be built.                        
  The used degrees of freedom set is  UX   UY   UZ   ROTX ROTY ROTZ
  Please verify constraints (including rotational degrees of freedom)
@@ -351,7 +361,7 @@
   
 
 
- *** WARNING ***                         CP =       5.922   TIME= 18:59:55
+ *** WARNING ***                         CP =       7.797   TIME= 00:50:02
  A linear perturbation analysis with contact usually requires turning on 
  large deflection option (NLGEOM,ON) in the base analysis.  Otherwise    
  the down-stream analysis will not use the current deformation           
@@ -359,22 +369,22 @@
  error.                                                                  
 
   BLOCK LANCZOS CALCULATION OF UP TO     2 EIGENVECTORS.
-  NUMBER OF EQUATIONS              =       113279
-  MAXIMUM WAVEFRONT                =         3336
+  NUMBER OF EQUATIONS              =       113774
+  MAXIMUM WAVEFRONT                =         3366
   MAXIMUM MODES STORED             =            2
   MINIMUM EIGENVALUE               = -0.10000E+31
   MAXIMUM EIGENVALUE               =  0.10000E+31
   CENTER EIGENVALUE                =  0.00000E+00
 
 
- *** NOTE ***                            CP =       9.078   TIME= 18:59:58
+ *** NOTE ***                            CP =      11.641   TIME= 00:50:06
  The initial memory allocation (-m) has been exceeded.                   
   Supplemental memory allocations are being used.                        
-  Memory allocated for solver              =   412.377 MB
-  Memory required for in-core solution     =   393.143 MB
-  Memory required for out-of-core solution =   110.567 MB
+  Memory allocated for solver              =   457.156 MB
+  Memory required for in-core solution     =   435.794 MB
+  Memory required for out-of-core solution =   128.440 MB
 
- *** NOTE ***                            CP =       9.078   TIME= 18:59:58
+ *** NOTE ***                            CP =      11.641   TIME= 00:50:06
  The Sparse Matrix Solver is currently running in the in-core memory     
  mode.  This memory mode uses the most amount of memory in order to      
  avoid using the hard drive as much as possible, which most often        
@@ -384,7 +394,7 @@
 
  *** ANSYS - ENGINEERING ANALYSIS SYSTEM  RELEASE 2020 R1          20.1     ***
  ANSYS Academic Research                           
- 00608699  VERSION=WINDOWS x64   19:00:05  OCT 18, 2020 CP=     16.078
+ 00608699  VERSION=WINDOWS x64   00:50:16  OCT 21, 2020 CP=     21.141
 
  strut--Eigenvalue Buckling (B5)                                               
 
@@ -395,17 +405,17 @@
 
       SHAPE NUMBER   LOAD MULTIPLIER
 
-            1           0.99836322    
-            2            4.0096920    
+            1            1.0084743    
+            2            1.0159325    
 
 
 
 
  *** ANSYS BINARY FILE STATISTICS
   BUFFER SIZE USED= 16384
-      314.438 MB WRITTEN ON ELEMENT MATRIX FILE: file.emat
+      314.562 MB WRITTEN ON ELEMENT MATRIX FILE: file.emat
        74.750 MB WRITTEN ON ELEMENT SAVED DATA FILE: file.esav
-      110.812 MB WRITTEN ON ASSEMBLED MATRIX FILE: file.full
+      124.688 MB WRITTEN ON ASSEMBLED MATRIX FILE: file.full
         7.125 MB WRITTEN ON MODAL MATRIX FILE: file.mode
         8.875 MB WRITTEN ON RESULTS FILE: file.rst
  *************** Write FE CONNECTORS *********
@@ -417,17 +427,17 @@
  FINISH SOLUTION PROCESSING
 
 
- ***** ROUTINE COMPLETED *****  CP =        16.328
+ ***** ROUTINE COMPLETED *****  CP =        21.484
 
 
 
  PRINTOUT RESUMED BY /GOP
 
- *GET  _WALLASOL  FROM  ACTI  ITEM=TIME WALL  VALUE=  19.0013889    
+ *GET  _WALLASOL  FROM  ACTI  ITEM=TIME WALL  VALUE= 0.837777778    
 
  *** ANSYS - ENGINEERING ANALYSIS SYSTEM  RELEASE 2020 R1          20.1     ***
  ANSYS Academic Research                           
- 00608699  VERSION=WINDOWS x64   19:00:05  OCT 18, 2020 CP=     16.344
+ 00608699  VERSION=WINDOWS x64   00:50:16  OCT 21, 2020 CP=     21.500
 
  strut--Eigenvalue Buckling (B5)                                               
 
@@ -435,7 +445,7 @@
 
           ***** ANSYS RESULTS INTERPRETATION (POST1) *****
 
- *** NOTE ***                            CP =      16.344   TIME= 19:00:05
+ *** NOTE ***                            CP =      21.500   TIME= 00:50:16
  Reading results into the database (SET command) will update the current 
  displacement and force boundary conditions in the database with the     
  values from the results file for that load set.  Note that any          
@@ -453,27 +463,27 @@
  EXIT THE ANSYS POST1 DATABASE PROCESSOR
 
 
- ***** ROUTINE COMPLETED *****  CP =        16.344
+ ***** ROUTINE COMPLETED *****  CP =        21.516
 
 
 
  PRINTOUT RESUMED BY /GOP
 
- *GET  _WALLDONE  FROM  ACTI  ITEM=TIME WALL  VALUE=  19.0013889    
+ *GET  _WALLDONE  FROM  ACTI  ITEM=TIME WALL  VALUE= 0.837777778    
 
  PARAMETER _PREPTIME =     0.000000000    
 
- PARAMETER _SOLVTIME =     29.00000000    
+ PARAMETER _SOLVTIME =     38.00000000    
 
  PARAMETER _POSTTIME =     0.000000000    
 
- PARAMETER _TOTALTIM =     29.00000000    
+ PARAMETER _TOTALTIM =     38.00000000    
 
  *GET  _DLBRATIO  FROM  ACTI  ITEM=SOLU DLBR  VALUE=  0.00000000    
 
  *GET  _COMBTIME  FROM  ACTI  ITEM=SOLU COMB  VALUE=  0.00000000    
- --- Number of total nodes = 38093
- --- Number of total elements = 21317
+ --- Number of total nodes = 38094
+ --- Number of total elements = 21526
  --- Element load balance ratio = 0
  --- Time to combine distributed files = 0
 
@@ -486,7 +496,7 @@
 +--------------------- A N S Y S   S T A T I S T I C S ------------------------+
 
 Release: 2020 R1            Build: 20.1       Update: UP20191203   Platform: WINDOWS x64 
-Date Run: 10/18/2020   Time: 19:00     Process ID: 1676
+Date Run: 10/21/2020   Time: 00:50     Process ID: 9116
 Operating System: Windows 10  (Build: 19042)
 
 Processor Model: Intel(R) Core(TM) i7-1065G7 CPU @ 1.30GHz
@@ -506,23 +516,23 @@ GPU Acceleration: Not Requested
 
 Job Name: file
 Input File: dummy.dat
-Working Directory: C:\Users\mende\Documents\repos\team_18\Project 2\ANSYS\Strut\_ProjectScratch\Scr04A3
+Working Directory: C:\Users\mende\Documents\repos\team_18\Project 2\ANSYS\Strut\_ProjectScratch\Scr545D
 
-Total CPU time for main thread                    :       16.4 seconds
-Total CPU time summed for all threads             :       16.3 seconds
+Total CPU time for main thread                    :       21.7 seconds
+Total CPU time summed for all threads             :       21.5 seconds
 
-Elapsed time spent obtaining a license            :        3.2 seconds
+Elapsed time spent obtaining a license            :        3.3 seconds
 Elapsed time spent pre-processing model (/PREP7)  :        0.0 seconds
-Elapsed time spent solution - preprocessing       :        0.5 seconds
-Elapsed time spent computing solution             :       15.5 seconds
+Elapsed time spent solution - preprocessing       :        0.6 seconds
+Elapsed time spent computing solution             :       21.3 seconds
 Elapsed time spent solution - postprocessing      :        0.0 seconds
 Elapsed time spent post-processing model (/POST1) :        0.0 seconds
  
 Eigensolver used                                  :            Block Lanczos
 Equation solver computational rate                :       16.1 Gflops
-Equation solver effective I/O rate                :       10.8 GB/sec
+Equation solver effective I/O rate                :        8.9 GB/sec
 
-Maximum total memory used                         :     1093.0 MB
+Maximum total memory used                         :     1187.0 MB
 Maximum total memory allocated                    :     2624.0 MB
 Total physical memory available                   :         16 GB
 
@@ -543,11 +553,11 @@ Total amount of I/O read from disk                :        0.9 GB
  |---------------------------------------------------------------------------|
  |                                                                           |
  | Database Requested(-db)  1024 MB    Scratch Memory Requested      1024 MB |
- | Maximum Database Used      25 MB    Maximum Scratch Memory Used   1068 MB |
+ | Maximum Database Used      25 MB    Maximum Scratch Memory Used   1162 MB |
  |                                                                           |
  |---------------------------------------------------------------------------|
  |                                                                           |
- |        CP Time      (sec) =         16.344       Time  =  19:00:06        |
- |        Elapsed Time (sec) =         22.000       Date  =  10/18/2020      |
+ |        CP Time      (sec) =         21.531       Time  =  00:50:17        |
+ |        Elapsed Time (sec) =         28.000       Date  =  10/21/2020      |
  |                                                                           |
  *---------------------------------------------------------------------------*
